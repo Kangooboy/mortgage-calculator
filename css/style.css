@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+form {
+  width: 300px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px #cccccc;
+}
+.page-header {
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    text-transform: uppercase; 
+}
+
+.rate, 
+.maxloan,
+.minpayment,
+.initial-loan,
+.down-payment {
+  width: 35%;
+}
+
+.term {
+  width: 45%;
+}
+
+fieldset {
+  padding: 10px;
+  border: 1px solid #34495e;
+  border-radius: 5px;
+}
+
+fieldset legend {
+  color: #34495e;
+}
+
+legend {
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  height: 24px;
+  margin-bottom: 10px;
+  padding: 2px 5px;
+  font-family: "Roboto", sans-serif;
+  vertical-align: middle;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+select[multiple] {
+  height: 60px;
+}
+
+input[type="submit"],
+input[type="button"],
+input[type="reset"] {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0 5px;
+  padding: 6px 15px;
+  color: #ffffff;
+  background-color: #101315;
+  border: none;
+  border-radius: 5px;
+}
+
+button[type="button"] {
+  display: block;
+  margin: 10px auto;
+  width: 300px;
+  height: 30px;
+  color: #ffffff;
+  background-color: #030313;
+  border-radius: 8px;
+}
+
+.buttons {
+  margin-top: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+button:hover,
+input[type="submit"]:hover,
+input[type="reset"]:hover,
+input[type="button"]:hover  {
+  background-color: #000a8e;
+}
+
+.monthly-mortgage {
+  display: flex;
+  justify-content: space-between;
+}
+
+.monthly-mortgage input {
+width: 35%;
+}
+
+.monthly-mortgage label {
+  white-space: nowrap;
+  margin-top: 5px;
+}
+
+main {
+  min-height: 400px;
+}
+
+.hidden {
+  display: none;
+}
+
+.calculator-container,
+.edit-bank-container {
+  position: absolute;
+  margin: auto;
+  top: 30px; left: 0; bottom: 0; right: 0;
+}

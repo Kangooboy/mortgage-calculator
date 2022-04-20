@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Mortgage calculator</title>
+</head>
+<body>
+  <div class="calculator-container">
+    <main class="calculator">
+      <form class="calculator-form" action="#" method="get">
+        <fieldset>
+          <legend>mortgage calculator</legend>
+          <div>
+            <label>choose bank</label>
+            <input class="bank-name" type="text" list="banks" name="bank" required>
+            <datalist id="banks"></select>
+          </div>
+          <label for="initial-loan">initial loan</label>
+          <input class="initial-loan" type="text" id="initial-loan" name="initial-loan" pattern="^[1-9]+[0-9]*$" required>
+          <label for="down-payment">down payment</label>
+          <input class="down-payment" type="text" id="down-payment" name="down-payment" pattern="^[1-9]+[0-9]*$" required>
+          <div class="monthly-mortgage">
+            <label for="monthly-mortgage">monthly mortgage:</label>
+            <input type="text" id="monthly-mortgage" name="monthly-mortgage" disabled>
+        </div>
+        </fieldset>
+        <div class="buttons">
+          <input type="submit" name="calculate" value="calculate"/>
+          <input type="reset" name="reset" value="reset">
+        </div>
+      </form>
+      <button type="button" name="edit">edit bank</button>
+    </main>
+  </div>
+  <div class="edit-bank-container hidden">
+    <main class="edit-bank">
+      <form class="form" action="#" method="post">
+        <fieldset>
+          <legend>edit bank</legend>
+          <label for="bank">bank</label>
+          <input id="bank" type="text" name="name">
+          <label for="rate">interest rate %</label>
+          <input class="rate" type="text" id="rate" name="rate" pattern="^[1-9]+[0-9]*$" required>
+          <label for="maxloan">max loan</label>
+          <input class="maxloan" type="text" id="maxloan" name="maxloan" pattern="^[1-9]+[0-9]*$"  required>
+          <label for="minpayment">min payment</label>
+          <input class="minpayment" type="text" id="minpayment" name="minpayment" pattern="^[1-9]+[0-9]*$" required>
+          <label for="term">term (months count)</label>
+          <input class="term" type="number" id="term" name="term" min="1">
+        </fieldset>
+        <div class="buttons">
+          <input type="submit" name="update" value="update"/>
+          <input type="reset" name="delete" value="delete"/>
+        </div>
+      </form>
+      <button type="button" name="calculator">calculator</button>
+    </main>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
