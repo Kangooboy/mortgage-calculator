@@ -4,6 +4,8 @@ ___
 
 ___Important___: three banks are available by default. If all banks are removed, an empty array remains in the ___locale storage___. To restore the default banks, you must completely clear the ___locale storage___ (including the empty array) and reload the program.
 
+When you select a bank on a __MORTGAGE CALCULATOR__ all of that bank's settings are displayed on the __EDIT BANK__  and are available for editing.
+
 ___Note___:
 _application was tested in_ ___Google Chrome v100.0.4896.75(x86_64)___
 
@@ -37,7 +39,7 @@ __Buttons:__
 (clears all input fields)
 
 3. ___edit bank___ 
-(opens the page of the bank editor selected in the bank selection field)
+(opens the page of the __EDIT BANK__)
 
 ---
 
@@ -68,6 +70,6 @@ ___Buttons:___
 (deletes the current bank)
 
 3. ___calculator___ 
-(opens the calculator window)
+(opens the __MORTGAGE CALCULATOR__)
 
 ___Note___: all fields are required
