@@ -10,7 +10,9 @@ _The application was tested in_ ___Google Chrome v100.0.4896.75(x86_64)___
 ---
 
 __MORTGAGE CALCULATOR__ (window appears immediately after loading)
-  __Fields__
+
+__Fields__
+
 1. ___choose bank___ 
 (bank selection or name entry)
 
@@ -40,7 +42,9 @@ __Buttons__
 ---
 
 __EDIT BANK__
-  ___Fields___
+
+___Fields___
+
 1. ___bank___ 
 (bank name)
 
