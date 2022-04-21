@@ -1,5 +1,8 @@
 The application has two windows: __MORTGAGE CALCULATOR__ and __EDIT BANK__.
 
+___
+___Important___: three banks are available by default. If all banks are removed, an empty array remains in the ___locale storage___. To restore the default banks, you must completely clear the ___locale storage___ (including the empty array) and reload the program.
+
 ---
 
 __MORTGAGE CALCULATOR__ (window appears immediately after loading)
@@ -16,7 +19,7 @@ __Fields__
 4) ___monthly mortgage___ 
 (field for displaying the amount of the monthly payment; not active for input)
 
-_Note_:
+___Note___:
 if in fields ___2___ and ___3___ a value is entered that is greater than the value allowed by the selected bank, then a message about choosing a more suitable bank appears. After ___2.2___ seconds, the error window disappears and all fields are cleared.
 All fields are required
 
@@ -59,4 +62,4 @@ ___Buttons___
 3) ___calculator___ 
 (opens the calculator window)
 
-_Note_: all fields are required
+___Note___: all fields are required
