@@ -72,7 +72,7 @@ function setValue(item) {
   loanTerm.value = item.term;
 }
 
-function updateValue(evt) {
+function onEditFormSubmit(evt) {
   evt.preventDefault();
   for (let i = 0; i < banks.length; i++) {
     if(banks[i].name === bankName.value) {
@@ -100,7 +100,7 @@ function updateValue(evt) {
   this.reset();
 }
 
-editForm.addEventListener('submit', updateValue);
+editForm.addEventListener('submit', onEditFormSubmit);
 
 deleteButton.addEventListener('click', () => {
   banks.forEach((item, i) => {
@@ -113,7 +113,7 @@ deleteButton.addEventListener('click', () => {
   })
 })
 
-const calculateMonthlyMortgage = (evt) => {
+const onCalculateFormSubmit = (evt) => {
   evt.preventDefault();
   const loan = Number(initialLoan.value);
   const term = Number(loanTerm.value);
@@ -138,7 +138,7 @@ const calculateMonthlyMortgage = (evt) => {
   return monthlyMortgage.value = mortgageAmount.toFixed(2);
 }
 
-calculatorForm.addEventListener('submit', calculateMonthlyMortgage);
+calculatorForm.addEventListener('submit', onCalculateFormSubmit);
 
 getBanks();
 renderBanks();
