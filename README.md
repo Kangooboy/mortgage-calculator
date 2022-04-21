@@ -5,13 +5,13 @@ ___
 ___Important___: three banks are available by default. If all banks are removed, an empty array remains in the ___locale storage___. To restore the default banks, you must completely clear the ___locale storage___ (including the empty array) and reload the program.
 
 ___Note___:
-_The application was tested in_ ___Google Chrome v100.0.4896.75(x86_64)___
+_application was tested in_ ___Google Chrome v100.0.4896.75(x86_64)___
 
 ---
 
 __MORTGAGE CALCULATOR__ (window appears immediately after loading)
 
-__Fields__
+__Fields:__
 
 1. ___choose bank___ 
 (bank selection or name entry)
@@ -29,7 +29,7 @@ ___Note___:
 if in fields ___2___ and ___3___ a value is entered that is greater than the value allowed by the selected bank, then a message about choosing a more suitable bank appears. After ___2.2___ seconds, the error window disappears and all fields are cleared.
 All fields are required
 
-__Buttons__
+__Buttons:__
 1. ___calculate___ 
 (after clicking, the amount of the monthly payment is displayed in the output field)
 
@@ -43,7 +43,7 @@ __Buttons__
 
 __EDIT BANK__
 
-___Fields___
+___Fields:___
 
 1. ___bank___ 
 (bank name)
@@ -60,7 +60,7 @@ ___Fields___
 5. ___term___ 
 (loan term in months)
 
-___Buttons___
+___Buttons:___
 1. ___update___ 
 (saves the new settings for the current bank; if the bank name is changed, saves the new bank)
 
