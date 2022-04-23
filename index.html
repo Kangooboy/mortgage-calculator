@@ -12,11 +12,11 @@
     <main class="calculator">
       <form class="calculator-form" action="#" method="get">
         <fieldset>
-          <legend>mortgage calculator</legend>
-          <div>
+          <legend class="mortgage-legend">mortgage calculator</legend>
+          <div class="bank-list">
             <label>choose bank</label>
             <input class="bank-name" type="text" list="banks" name="bank" required>
-            <datalist id="banks"></select>
+            <datalist id="banks"></datalist >
           </div>
           <label for="initial-loan">initial loan</label>
           <input class="initial-loan" type="text" id="initial-loan" name="initial-loan" pattern="^[1-9]+[0-9]*$" required>
@@ -37,11 +37,9 @@
   </div>
   <div class="edit-bank-container hidden">
     <main class="edit-bank">
-      <form class="form" action="#" method="post">
+      <form class="edit-form" action="#" method="post">
         <fieldset>
-          <legend>edit bank</legend>
-          <label for="bank">bank</label>
-          <input id="bank" type="text" name="name">
+          <legend class="edit-legend">edit bank</legend>
           <label for="rate">interest rate %</label>
           <input class="rate" type="text" id="rate" name="rate" pattern="^[1-9]+[0-9]*$" required>
           <label for="maxloan">max loan</label>

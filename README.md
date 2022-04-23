@@ -2,74 +2,78 @@ The application has two windows: __MORTGAGE CALCULATOR__ and __EDIT BANK__.
 
 ___
 
-___Important___: three banks are available by default. If all banks are removed, an empty array remains in the ___locale storage___. To restore the default banks, you must completely clear the ___locale storage___ (including the empty array) and reload the program.
+Three banks are available by default. If all banks are removed, an empty array remains in the ___locale storage___. To restore the default banks, you must completely clear the ___locale storage___ (including the empty array) and reload the program.
 
 When you select a bank on a __MORTGAGE CALCULATOR__ all of that bank's settings are displayed on the __EDIT BANK__  and are available for editing.
 
+
+
 ___Note___:
-_application was tested in_ ___Google Chrome v100.0.4896.75(x86_64)___
+application was tested in _Google Chrome v100.0.4896.75(x86_64)_
 
 ---
 
 __MORTGAGE CALCULATOR__ (window appears immediately after loading)
 
-__Fields:__
+__Fields__ (_all fields are required_)
 
 1. ___choose bank___ 
-(bank selection or name entry)
+- bank selection or name entry
 
 2. ___initial loan___ 
-(fields for entering the desired loan amount)
+- fields for entering the desired loan amount
+(_active for input_)
 
 3. ___down payment___ 
-(field for entering the first payment)
+- field for entering the first payment
+(_active for input_)
 
 4. ___monthly mortgage___ 
-(field for displaying the amount of the monthly payment; not active for input)
+- field for displaying the amount of the monthly payment
+(_not active for input_)
 
 ___Note___:
 if in fields ___2___ and ___3___ a value is entered that is greater than the value allowed by the selected bank, then a message about choosing a more suitable bank appears. After ___2.2___ seconds, the error window disappears and all fields are cleared.
-All fields are required
 
 __Buttons:__
 1. ___calculate___ 
-(after clicking, the amount of the monthly payment is displayed in the output field)
+- after clicking, the amount of the monthly payment is displayed in the  ___monthly mortgage___ field
 
 2. ___reset___ 
-(clears all input fields)
+- clears all input fields
 
 3. ___edit bank___ 
-(opens the page of the __EDIT BANK__)
+- opens __EDIT BANK__ page
 
 ---
 
 __EDIT BANK__
 
-___Fields:___
+___Fields___ (_all fields are required and active for input_) 
 
 1. ___bank___ 
-(bank name)
+- _bank name_
 
 2. ___interest rate___ 
-(annual interest rate)
+- _annual interest rate_
 
 3. ___max loan___
- (maximum loan amount)
+ - _maximum loan amount_
 
 4. ___min payment___ 
-(minimum down payment)
+- _minimum down payment_
 
 5. ___term___ 
-(loan term in months)
+- _loan term in months_
 
 ___Buttons:___
 1. ___update___ 
-(saves the new settings for the current bank; if the bank name is changed, saves the new bank)
+- saves the new settings for the current bank
+- if the bank name is changed, saves the new bank
 
 2. ___delete___ 
-(deletes the current bank)
+- deletes the current bank
+- if the bank name field is empty, the ___delete___ button simply clears the fields without changing the settings
 
 3. ___calculator___ 
-(opens the __MORTGAGE CALCULATOR__)
-
-___Note___: all fields are required
+- opens the __MORTGAGE CALCULATOR__
