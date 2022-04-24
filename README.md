@@ -1,6 +1,9 @@
-The application has two windows: __MORTGAGE CALCULATOR__ and __EDIT BANK__.
+### MORTGAGE CALCULATOR
 
+#### Web app where users can create/edit banks and calculate mortgage payments
 ___
+
+The application has two windows __MORTGAGE CALCULATOR__ and __EDIT BANK__.
 
 Three banks are available by default. If all banks are removed, an empty array remains in the ___locale storage___. To restore the default banks, you must completely clear the ___locale storage___ (including the empty array) and reload the program.
 
