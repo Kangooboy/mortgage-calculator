@@ -5,6 +5,8 @@ ___
 
 The application has two windows __MORTGAGE CALCULATOR__ and __EDIT BANK__.
 
+All data is stored in the ___locale storage___ of __web browser.__
+
 Three banks are available by default. If all banks are removed, an empty array remains in the ___locale storage___. To restore the default banks, you must completely clear the ___locale storage___ (including the empty array) and reload the program.
 
 When you select a bank on a __MORTGAGE CALCULATOR__ all of that bank's settings are displayed on the __EDIT BANK__  and are available for editing.
