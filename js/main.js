@@ -134,7 +134,7 @@ const onCalculateFormSubmit = (evt) => {
   const payment = Number(downPayment.value);
   let rate = Number(interestRate.value);
   rate = (rate / 12) / 100;
-  let mortgageAmount = loan * ((rate * Math.pow((1 + rate), term)) / ((Math.pow((1 + rate), term) - 1)));
+  let mortgageAmount = (loan - payment) * ((rate * Math.pow((1 + rate), term)) / ((Math.pow((1 + rate), term) - 1)));
   if (loan > Number(maxLoan.value) || payment < Number(minPayment.value)) {
     const error = document.createElement('div');
     error.textContent = 'choose another bank';
