@@ -1,0 +1,25 @@
+{
+  "name": "mortgage-calculator",
+  "version": "1.0.0",
+  "description": "#### Web app where users can create/edit banks and calculate mortgage payments ___",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kangooboy/mortgage-calculator.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kangooboy/mortgage-calculator/issues"
+  },
+  "homepage": "https://github.com/Kangooboy/mortgage-calculator#readme",
+  "devDependencies": {
+    "eslint": "^8.15.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
