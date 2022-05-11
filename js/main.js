@@ -36,6 +36,10 @@ const GET_BANKS = [
 
 const banks = JSON.parse(localStorage.getItem('banks')) || GET_BANKS;
 
+const getBanks = () => {
+  localStorage.setItem('banks', JSON.stringify(banks));
+};
+
 function onEditButtonClick() {
   calculatorContainer.classList.add('hidden');
   editContainer.classList.remove('hidden');
@@ -55,10 +59,6 @@ function onCalculatorButtonClick() {
   calculatorButton.removeEventListener('click', onCalculatorButtonClick);
   editButton.addEventListener('click', onEditButtonClick);
 }
-
-const getBanks = () => {
-  localStorage.setItem('banks', JSON.stringify(banks));
-};
 
 function renderBanks() {
   banks.forEach((item) => {
