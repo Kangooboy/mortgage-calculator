@@ -80,7 +80,7 @@ function setValue(item) {
 
 function onEditFormSubmit(evt) {
   evt.preventDefault();
-  for (let i = 0; i < banks.length; i += 1) {
+  for (let i = 0; i < banks.length; i++) {
     if (banks[i].name === bank.value) {
       banks[i].rate = interestRate.value;
       banks[i].maxloan = maxLoan.value;
@@ -113,8 +113,7 @@ const onCalculateFormSubmit = (evt) => {
   const payment = Number(downPayment.value);
   let rate = Number(interestRate.value);
   rate = (rate / 12) / 100;
-  const mortgageAmount = (loan - payment) * ((rate * (1 + rate) ** term)
-  / (((1 + rate) ** term - 1)));
+  const mortgageAmount = (loan - payment) * ((rate * (1 + rate) ** term) / (((1 + rate) ** term - 1)));
 
   if (loan > Number(maxLoan.value) || payment < Number(minPayment.value)) {
     const error = document.createElement('div');
